@@ -27,18 +27,18 @@ const Info = () => {
     }
     useEffect(()=>{
         data(url);
-        localStorage.removeItem("usertoken")
+        localStorage.removeItem("usertoken");
     },[])
 
     const logout=()=>{
-        // localStorage.clear();
-        navigate('/');
+        localStorage.clear();
+        navigate('/register');
         console.log("logout");
     }
   return (
     <>
+      <div className="container rounded bg-white mt-2 mb-5">
       <h1>Information</h1>
-      <div className="container rounded bg-white mt-5 mb-5">
     <div className="row">
         <div className="col-md-3 border-right">
             <div className="d-flex flex-column align-items-center text-center p-3 py-5">

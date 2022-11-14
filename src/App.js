@@ -22,7 +22,7 @@ const App = () => {
               element={token ? <Info/>: <Login token={token} settoken={setToken} />}
             />
             <Route path="/register" element={<Register />} />
-            <Route path="/field" element={<Field />} />
+            <Route path="/field" element={<Field/>} />
             <Route path="*" element={<Error />} />
           </Routes>
         </Router>
